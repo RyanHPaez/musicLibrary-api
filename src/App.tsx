@@ -2,7 +2,6 @@ import './App.css';
 import { useEffect, useState } from 'react'
 import Gallery from './components/Gallery'
 import SearchBar from './components/SearchBar'
-import React from 'react';
 
 function App() {
   let [searchTerm, setSearchTerm] = useState('')
