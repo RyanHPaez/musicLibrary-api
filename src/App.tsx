@@ -6,7 +6,7 @@ import SearchBar from './components/SearchBar'
 function App() {
   let [searchTerm, setSearchTerm] = useState('')
   let [data, setData] = useState([])
-  let [message, setMessage] = useState('Search for Music!')
+  let [message, setMessage] = useState('Find that song Music!')
 
   useEffect(() => {
     if (searchTerm) {

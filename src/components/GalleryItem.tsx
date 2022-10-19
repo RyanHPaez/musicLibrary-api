@@ -10,11 +10,13 @@ const GalleryItem = (props: GalleryItemProps) => {
     const simpleView = () => {
         return (
             <div style={{
-                'width': '25vw',
-                'height': '20vh',
+                
+                'height': '10vh',
                 'border': '1px solid black',
-                'margin' : '2px',
-                'position': 'relative'
+                'display': 'block',
+        'marginLeft': 'auto',
+        'marginRight': 'auto',
+        'width': '50%'
             }}>
                 <h3>{props.item.trackName}</h3>
                 <h4>{props.item.collectionName}</h4>
@@ -25,11 +27,10 @@ const GalleryItem = (props: GalleryItemProps) => {
     const detailView = () => {
         return (
             <div style={{
-                'width': '80vw',
-                'height': '20vh',
-                'border': '1px solid black',
-                'margin' : '2px',
-                'position': 'relative',
+                'display': 'block',
+        'marginLeft': 'auto',
+        'marginRight': 'auto',
+        'width': '50%',
                 'backgroundImage': `url(${props.item.artworkUrl100})`,
                 'backgroundRepeat': 'no-repeat',
                 'backgroundSize': 'cover',
@@ -45,7 +46,11 @@ const GalleryItem = (props: GalleryItemProps) => {
 
     return (
         <div onClick={() => setView(!view)}
-        style={{'display': 'inline-block'}}>
+        style={{'display': 'block',
+        'marginLeft': 'auto',
+        'marginRight': 'auto',
+        'width': '50%'
+        }}>
             {view ? detailView() : simpleView()}
         </div>
     )
