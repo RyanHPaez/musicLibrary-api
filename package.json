@@ -1,4 +1,8 @@
 {
+  "engines": {
+    "node": "16.14.2",
+    "npm": "8.19.2"
+  },
   "name": "7.3.3_dev",
   "version": "0.1.0",
   "private": true,
@@ -40,4 +44,5 @@
       "last 1 safari version"
     ]
   }
+  
 }
